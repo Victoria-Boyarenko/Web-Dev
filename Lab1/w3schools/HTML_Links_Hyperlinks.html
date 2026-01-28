@@ -1,0 +1,102 @@
+<!-- The most important attribute of the <a> element is the href attribute, which 
+indicates the link's destination. The link text is the part that will be visible to the reader.
+Clicking on the link text, will send the reader to the specified URL address. -->
+ <a href="https://www.w3schools.com/">Visit W3Schools.com!</a> 
+
+<!-- By default, the linked page will be displayed in the current browser window. To change this, 
+you must specify another target for the link. The target attribute specifies where to open the 
+linked document.
+
+The target attribute can have one of the following values:
+
+    _self - Default. Opens the document in the same window/tab as it was clicked
+    _blank - Opens the document in a new window or tab
+    _parent - Opens the document in the parent frame
+    _top - Opens the document in the full body of the window -->
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a> 
+
+<!-- Both examples above are using an absolute URL (a full web address) in the href attribute.
+A local link (a link to a page within the same website) is specified with a relative URL 
+(without the "https://www" part): -->
+ <h2>Absolute URLs</h2>
+<p><a href="https://www.w3.org/">W3C</a></p>
+<p><a href="https://www.google.com/">Google</a></p>
+
+<h2>Relative URLs</h2>
+<p><a href="html_images.asp">HTML Images</a></p>
+<p><a href="/css/default.asp">CSS Tutorial</a></p> 
+
+<!-- To use an image as a link, just put the <img> tag inside the <a> tag: -->
+<a href="default.asp">
+<img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+</a> 
+
+<!-- Use mailto: inside the href attribute to create a link that opens the user's email 
+program (to let them send a new email): -->
+<a href="mailto:someone@example.com">Send email</a> 
+
+<!-- To use an HTML button as a link, you have to add some JavaScript code.
+JavaScript allows you to specify what happens at certain events, such as a click of a button: -->
+ <button onclick="document.location='default.asp'">HTML Tutorial</button> 
+
+<!-- The title attribute specifies extra information about an element. The information is most often shown 
+as a tooltip text when the mouse moves over the element -->
+ <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a> 
+
+<!-- Here, an unvisited link will be green with no underline. A visited link will be pink with no underline. 
+An active link will be yellow and underlined. In addition, when mousing over a link (a:hover) it will 
+become red and underlined: -->
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style> 
+
+<!-- A link can also be styled as a button, by using CSS: -->
+ <style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style> 
+
+<!-- Bookmarks can be useful if a web page is very long.
+To create a bookmark - first create the bookmark, then add a link to it.
+When the link is clicked, the page will scroll down or up to the location with the bookmark. -->
+
+<!-- First, use the id attribute to create a bookmark: -->
+<h2 id="C4">Chapter 4</h2>
+
+<!-- Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page: -->
+<a href="#C4">Jump to Chapter 4</a> 
+
+<!-- You can also add a link to a bookmark on another page: -->
+<a href="html_demo.html#C4">Jump to Chapter 4</a>
