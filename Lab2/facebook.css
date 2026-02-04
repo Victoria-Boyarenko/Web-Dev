@@ -21,6 +21,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-items: flex-start;
   gap: 40px;
 }
 
@@ -121,6 +122,19 @@ hr{
 .create-button:hover{
   background: #2bff00;
 }
+
+.sr-only{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 
 @media (max-width: 900px){
   .container{

@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <div class="page">
+  <main class="page">
     <div class="layout">
 
       <div class="left">
@@ -25,24 +25,26 @@
           </div>
 
           <div id="instphoto">
-             <img src="https://static.cdninstagram.com/rsrc.php/v4/yF/r/reN9rvYdLTB.png" height="500px" alt="photos">
+            <img src="https://static.cdninstagram.com/rsrc.php/v4/yF/r/reN9rvYdLTB.png" alt="photos">
           </div>
         </div>
       </div>
 
-
       <div class="divider"></div>
 
-  
       <div class="right">
         <div class="login">
           <div class="login-title">Войти в Instagram</div>
 
           <form class="form" action="">
-            <input class="input" type="text"
+            <label for="ig-login" class="sr-only">
+              Имя пользователя, номер телефона или электронный адрес
+            </label>
+            <input id="ig-login" class="input" type="text"
               placeholder="Имя пользователя, номер мобильного телефона или электронный адрес" required>
 
-            <input class="input" type="password" placeholder="Пароль" required>
+            <label for="ig-password" class="sr-only">Пароль</label>
+            <input id="ig-password" class="input" type="password" placeholder="Пароль" required>
 
             <button class="button button-login" type="submit">Войти</button>
           </form>
@@ -58,13 +60,15 @@
 
           <a class="button button-outline2" href="#">Создать новый аккаунт</a>
 
-           <div class="meta">
-            <img src="https://cdn.pixabay.com/photo/2021/12/14/22/29/meta-6871457_1280.png" height="30px" alt="meta">
+          <div class="meta">
+            <img src="https://cdn.pixabay.com/photo/2021/12/14/22/29/meta-6871457_1280.png" height="30" alt="meta">
             <p>Meta</p>
-            </div>
+          </div>
+
+        </div>
       </div>
 
     </div>
-  </div>
+  </main>
 </body>
 </html>

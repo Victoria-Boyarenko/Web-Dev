@@ -1,39 +1,47 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <title>Facebook-log in</title>
-        <link rel="stylesheet"  href="facebook.css">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Facebook-log in</title>
+  <link rel="stylesheet" href="facebook.css">
+</head>
 
-    </head>
-    
-    <body>
-        <div class="container">
-        <div class="left">
-            <h1 id="facebook">Facebook</h1>
-            <pre id="text">
+<body>
+
+  <main class="container">
+
+    <header class="left">
+      <h1 id="facebook">Facebook</h1>
+
+      <pre id="text">
 Facebook помогает вам всегда 
 оставаться на связи и общаться со 
 своими знакомыми.
-             
-        </div>
+    </header>
 
-        <div class="right">
-            <form action="" class="login">
-                <input type="email" placeholder="Электронный адрес или номер телефона" required>
-                <input type="password" placeholder="Введите пароль" required>
+    <div class="right">
+      <form action="" class="login">
 
-                <br><button type="submit" class="button login-button"> Вход </button>
-                <p><a href="#" class="button forgot-button">Забыли пароль?</a></p>
-                <hr>
-                <p><a href="#"><button class="button create-button"> Создать новый аккаунт </button></a></p>
+        <label for="fb-email" class="sr-only">Электронный адрес или номер телефона</label>
+        <input id="fb-email" type="email"
+               placeholder="Электронный адрес или номер телефона" required>
 
+        <label for="fb-password" class="sr-only">Пароль</label>
+        <input id="fb-password" type="password"
+               placeholder="Введите пароль" required>
 
-            </form>
-        </div>
+        <button type="submit" class="button login-button">Вход</button>
+
+        <p><a href="#" class="button forgot-button">Забыли пароль?</a></p>
+        <hr>
+
+        <p><button type="button" class="button create-button">Создать новый аккаунт</button></p>
+
+      </form>
     </div>
 
-    </body>
+  </main>
+
+</body>
 </html>
