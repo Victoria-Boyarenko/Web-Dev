@@ -1,0 +1,183 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+.page{
+  width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.layout{
+  width: 1200px;
+  height: 620px;
+  display: flex;
+  align-items: stretch;
+}
+
+.left{
+  width: 740px;
+  padding: 40px;
+  position: relative;
+}
+
+#instlogo img{
+  width: 50px;
+  height: 50px;
+  margin-bottom: -50px; 
+ 
+}
+
+.promo{
+  width: 660px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.promo-text{
+  width: 660px;
+  text-align: center;
+  font-family: Times New Roman;
+  font-size: 34px;
+  line-height: 46px;
+  margin-top: 10px;
+}
+
+.gradient1{
+  background: linear-gradient(to right, orange, red, rgb(232, 50, 135));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.gradient2{
+  background: linear-gradient(to right, rgb(232, 50, 135), rgb(222, 37, 132), rgb(193, 18, 209));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+#instphoto{
+  width: 660px;
+  margin: 5px 20px 0 30px;
+}
+
+ 
+.divider{
+  width: 1px;
+  background: #e6e6e6;
+}
+
+ 
+.right{
+  width: 460px;
+  display: flex;
+  justify-content: center;
+  padding-top: 170px;      
+}
+
+.login{
+  width: 360px;
+  text-align: center;
+}
+
+.login-title{
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 12px;
+}
+
+.form{
+  width: 360px;
+}
+
+.input{
+  width: 360px;
+  height: 36px;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 0 15px;
+  font-size: 11px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 360px;
+  height: 30px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+}
+
+.button-login{
+  background: #a9c6f7;
+  color: #fff;
+}
+
+.link-forgot{
+  display: block;
+  margin-top: 12px;
+  font-size: 11px;
+  color: #111;
+  text-decoration: none;
+}
+
+.link-forgot:hover{
+  text-decoration: underline;
+}
+
+.spacer{
+  height: 44px;
+}
+
+.button-outline{
+  border: 1px solid #e5e5e5;
+  color: #111;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.button-outline2{
+  border: 1px solid #a9c6f7;
+  color: #246bff;
+  background: #fff;
+}
+
+.fb-icon{
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+}
+
+.meta {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #1c1e21;
+  font-size: 14px;
+}
