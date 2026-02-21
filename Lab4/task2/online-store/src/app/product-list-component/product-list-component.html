@@ -1,0 +1,29 @@
+<h1 class = "title"> Products</h1>
+
+<div class="grid">
+    @for (p of products; track p.id){
+        <div class="card">
+            <img [src]="getAllImages(p)[getIndex(p.id)]" [alt]="p.name" class="img">
+
+            <div class="thumbs">
+                @for(img of getAllImages(p); track $index){
+                     <img class="thumb" [class.active]="$index === getIndex(p.id)" [src]="img" [alt]="p.name + ' thubnail ' + ($index +1) " (click)="setIndex(p.id, $index)">
+                }
+            </div>
+            <div class="nav">
+                <button (click)="prevImage(p.id, getAllImages(p).length)">←</button>
+                <button (click)="nextImage(p.id, getAllImages(p).length)">→</button>
+            </div>
+
+
+            <h3 class="name">{{p.name}}</h3>
+            <p class="desc">{{p.description}}</p>
+            <p class="price"><b>{{p.price | number}} ₸</b></p>
+            <p class="rating">Rating: <b>{{p.rating}}</b> ⭐</p>
+            <a class="link" [href]="p.link" target="_blank"> Open on Kaspi</a>
+            <button (click)="shareOnWhatsaApp(p.link)"> Share on WhatsApp</button>
+            <button (click)="shareOnTelegram(p.link, p.name)">Share on Telegram</button>
+
+        </div>
+    }
+</div>
