@@ -1,0 +1,20 @@
+.categories{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+.categories button.active{
+ background: rgba(250, 60, 101, 0.71);
+ color: rgb(115, 2, 23);
+}
+button {
+    cursor: pointer;
+    border-radius: 15px;
+    border: 2px solid rgba(188, 4, 44, 0.495);
+    margin-left: 10px;
+    background: rgba(255, 183, 201, 0.858);
+}
+button:hover{
+    background: rgba(250, 60, 101, 0.71);
+}
